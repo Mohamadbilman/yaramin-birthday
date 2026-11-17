@@ -59,7 +59,7 @@ $("envelope")?.addEventListener("click", () => {
   const type = () => {
     if (index < letterText.length) {
       target.textContent += letterText.charAt(index++);
-      setTimeout(type, letterText.charAt(index - 1) === "\n" ? 280 : 34);
+      setTimeout(type, letterText.charAt(index - 1) === "\n" ? 100 : 15);
     }
   };
   type();
