@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff1f4">
+  <meta name="description" content="Cîhanek biçûk a rojbûnê, bi hezkirinê ji bo Yaramin.">
+  <title>Ji bo Yaramin ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="rose-layer" id="roseLayer" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">tiştek piçûk bi hezkirinê <span>♡</span></a>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Muzîkê bide / rawestîne">♫ <span id="musicLabel">Muzîka me</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="eyebrow"><span class="sparkle">✧</span> BI HEMÛ DILÊ MIN <span class="sparkle">✧</span></div>
+      <p class="script-intro">Ji bo kesê herî taybet ê jiyana min,</p>
+      <h1>Rojbûna te<br><em>pîroz be, Yaramin.</em></h1>
+      <p class="hero-copy">Îro roja te ye. Min cîhanek biçûk çêkiriye<br class="desktop"> da ku ez bedewiya te pîroz bikim.</p>
+      <button class="primary-btn" id="beginBtn">Vê diyariyê veke <span>♡</span></button>
+      <div class="hero-note">Cîhanek biçûk, bi gelek hezkirinê</div>
+      <div class="scroll-cue">DAKÊVÊ BER BI JÊRÊ <span>↓</span></div>
+      <div class="hero-flower flower-a">✿</div><div class="hero-flower flower-b">✧</div>
+    </section>
+
+    <section class="letter-section section reveal" id="letter">
+      <div class="section-kicker">01 / NAMEYEK JI DIL</div>
+      <div class="envelope-wrap">
+        <button class="envelope" id="envelope" aria-label="Nameyê veke">
+          <span class="envelope-heart">♡</span><span class="envelope-hint">Dest lê bike û veke</span>
+        </button>
+      </div>
+      <div class="letter-card" id="letterCard">
+        <div class="letter-top">NAMEYEKE JI BO TE <span>♡</span></div>
+        <h2>Çîçekamina min,</h2>
+        <p id="typedMessage" class="typed-message"></p>
+        <p class="letter-sign">Bi hemû hezkirina min, <span>♡</span></p>
+      </div>
+    </section>
+
+    <section class="memories-section section reveal" id="memories">
+      <div class="section-kicker">02 / BÎRANÎNÊN ME</div>
+      <h2 class="section-title">Demên me yên <em>delal.</em></h2>
+      <p class="section-subtitle">Hin kêlî hene ku divê her tim nêzî dil bimînin.</p>
+      <div class="memory-grid">
+        <button class="memory-card" data-caption="Yek ji kêliyên min ên herî xweş. Ez dê her carê dîsa wê hilbijêrim.">
+          <div class="photo-frame"><img src="photos/photo-1.jpeg" alt="Bîranîna me ya yekem" onerror="this.parentElement.classList.add('photo-placeholder')"><span class="placeholder-mark">♡</span></div>
+          <span class="memory-caption">Kêliyeke ku dimîne</span>
+        </button>
+        <button class="memory-card memory-offset" data-caption="Ecêb e ka çawa kêliyên biçûk dikarin wateya herî mezin hebin.">
+          <div class="photo-frame"><img src="photos/photo-2.jpeg" alt="Bîranîna me ya duyem" onerror="this.parentElement.classList.add('photo-placeholder')"><span class="placeholder-mark">✧</span></div>
+          <span class="memory-caption">Perçeyeke kêfxweşiyê</span>
+        </button>
+        <button class="memory-card" data-caption="Bîranînên zêdetir, kenînên zêdetir û gelek rojên bedew li pêşiya me ne.">
+          <div class="photo-frame"><img src="photos/photo-3.jpeg" alt="Bîranîna me ya sêyem" onerror="this.parentElement.classList.add('photo-placeholder')"><span class="placeholder-mark">♡</span></div>
+          <span class="memory-caption">Yek ji bo dil</span>
+        </button>
+      </div>
+      <p class="tiny-hint">Li ser wêneyekê bitikîne û nivîsa wê bixwîne.</p>
+    </section>
+
+    <section class="wish-section section reveal" id="wish">
+      <div class="section-kicker">03 / ROJA TE YA TAYBET</div>
+      <div class="cake-icon">🎂</div>
+      <h2 class="section-title">Daxwazeke <em>bike.</em></h2>
+      <p class="section-subtitle">Çavên xwe bigire, daxwazekê bike, paşê li agirên mûman bitikîne.</p>
+      <div class="cake" aria-label="Kekê rojbûnê bi sê mûmikan">
+        <div class="candles">
+          <button class="candle" aria-label="Mûmika yekem vemirîne"><span class="flame"></span></button>
+          <button class="candle" aria-label="Mûmika duyem vemirîne"><span class="flame"></span></button>
+          <button class="candle" aria-label="Mûmika sêyem vemirîne"><span class="flame"></span></button>
+        </div>
+        <div class="cake-top"></div><div class="cake-body"><span>♡</span><span>♡</span><span>♡</span></div><div class="cake-plate"></div>
+      </div>
+      <p id="wishMessage" class="wish-message">Sê ronahiyên biçûk, tenê ji bo te.</p>
+      <button class="soft-btn" id="relightBtn">Dîsa vêxîne ↺</button>
+    </section>
+
+    <section class="game-section section reveal" id="game">
+      <div class="section-kicker">04 / LÎSTIKOKEKE BIÇÛK</div>
+      <h2 class="section-title">Hinek <em>hezkirinê</em> bigire.</h2>
+      <p class="section-subtitle">Li ser dilên difirin bitikîne û pênc daxwazên xweş kom bike.</p>
+      <div class="game-panel">
+        <div class="game-score">DILÊN HATINE KOMKIRIN <strong id="score">0 / 5</strong></div>
+        <div class="heart-field" id="heartField">
+          <span class="game-instruction" id="gameInstruction">Dema te amade be ♡</span>
+        </div>
+        <button class="primary-btn small-btn" id="startGame">Dest bi lîstikê bike</button>
+        <p id="gameResult" class="game-result" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="final-section section reveal" id="final">
+      <div class="final-stars">✧　♡　✧</div>
+      <div class="section-kicker">05 / GOTINEKE DAWÎ</div>
+      <h2>Hêvî dikim sala te<br><em>wek dilê te bedew be.</em></h2>
+      <p class="final-copy">Hêvî dikim ev beşa nû ji jiyana te re sibehên aram, kenîna ji dil, ecêbîtiyên xweş û hemû kêfxweşiya ku tu hêjayî wê yî bîne.</p>
+      <p class="final-emphasis">Tu tenê bi hebûna xwe dinyayê hinekî nermtir û bedewtir dikî.</p>
+      <div class="big-heart">♡</div>
+      <p class="final-sign">Rojbûna te pîroz be, Yaramin.<br><span>Ez her tim piştgirê te me.</span></p>
+      <button class="text-btn" id="backTop">Dîsa ji destpêkê bixwîne ↑</button>
+    </section>
+  </main>
+
+  <footer>BI HINEK HEZKIRINA ZÊDETIR HATIYE ÇÊKIRIN <span>♡</span></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="photo-modal" id="photoModal" role="dialog" aria-modal="true" aria-label="Bîranîn">
+    <button class="modal-close" id="modalClose" aria-label="Bigire">×</button>
+    <div class="modal-heart">♡</div><p id="modalText"></p>
+  </div>
+  <audio id="birthdaySong" src="assets/song.mp3" preload="none" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
