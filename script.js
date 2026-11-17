@@ -126,7 +126,7 @@ function spawnGameHeart() {
   heart.className = "floating-heart";
   heart.type = "button";
   heart.textContent = "♥";
-  heart.setAttribute("aria-label", "Dilêk bigire");
+  heart.setAttribute("aria-label", "Dilek bigire");
   heart.style.left = `${8 + Math.random()*78}%`;
   heart.style.top = `${12 + Math.random()*65}%`;
   heart.addEventListener("click", () => {
